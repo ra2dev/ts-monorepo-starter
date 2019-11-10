@@ -14,6 +14,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "noUnusedLocals": true,
+    "declaration": true,
     "paths": {
       "@monoprefix/*": ["packages/*/src"],
       "*": ["node_modules", "packages"]

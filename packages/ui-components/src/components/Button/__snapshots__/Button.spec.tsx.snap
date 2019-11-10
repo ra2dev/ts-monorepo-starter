@@ -2,6 +2,7 @@
 
 exports[`Button match snapshot 1`] = `
 <button
+  className="sc-bdVaJa fdnqck"
   disabled={true}
   type="button"
 >

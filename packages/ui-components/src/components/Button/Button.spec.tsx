@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Button from './'
+import { Button } from './'
 
 describe('Button', () => {
   it('match snapshot', () => {

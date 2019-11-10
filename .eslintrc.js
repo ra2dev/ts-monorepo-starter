@@ -38,6 +38,7 @@ module.exports = {
 		'react/destructuring-assignment': 'off',
 		'import/no-useless-path-segments': 'off',
 		'import/prefer-default-export': 'off',
+		'react/jsx-props-no-spreading': 'off',
 		'lines-between-class-members': ['warn', 'always', { exceptAfterSingleLine: true }],
 		'no-else-return': ['error', { allowElseIf: true }],
 		'react/require-default-props': ['error', { forbidDefaultForRequired: false }],

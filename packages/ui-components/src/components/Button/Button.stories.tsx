@@ -1,12 +1,11 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
+import { Button } from './'
 
 export default {
   title: 'Button',
+  info: { inline: true, header: false },
 }
-
-// eslint-disable-next-line
-const Button = ({ children, ...props }: any): any => <button {...props}>{children}</button>
 
 export const text = () => <Button onClick={action('clicked')}>Hello Button</Button>
 

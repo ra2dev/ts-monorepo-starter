@@ -1,12 +1,28 @@
 import React from 'react'
+import { StyledButton } from './Button.styles'
 
 const b: any = {}
 
-export default function Button() {
-  const aa = b?.d?.g?.g?.()
+export interface ButtonProps {
+  /**
+   * This is custom description
+   */
+  children?: React.ReactNode
+  onClick?: any
+  text?: string
+}
+
+/**
+ * Button component
+ * @param children
+ * @param props
+ * @constructor
+ */
+export function Button({ children, ...props }: ButtonProps) {
+  const exampleOptionalChaining = b?.d?.g?.g?.()
   return (
-    <button type="button" disabled>
-      HELLO WORLD BUTTON {aa}
-    </button>
+    <StyledButton type="button" disabled {...props}>
+      {children} {exampleOptionalChaining}jsx-props-no-spreading
+    </StyledButton>
   )
 }
