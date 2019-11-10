@@ -34,6 +34,7 @@ module.exports = {
 		'import/no-extraneous-dependencies': 'off',
 		'linebreak-style': 'off',
 		'import/named': 0,
+		'no-undef': 0,
 		'react/destructuring-assignment': 'off',
 		'import/no-useless-path-segments': 'off',
 		'import/prefer-default-export': 'off',

@@ -17,7 +17,7 @@ module.exports = async ({ config }) => {
 		...packages.reduce(
 			(acc, name) => ({
 				...acc,
-				[`@monorepo/${name}`]: path.join(basePath, name, 'src'),
+				[`@monoprefix/${name}`]: path.join(basePath, name, 'src'),
 			}),
 			{}
 		),
