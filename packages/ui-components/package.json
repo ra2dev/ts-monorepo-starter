@@ -1,0 +1,12 @@
+{
+  "name": "@monoprefix/ui-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:es": "BABEL_ENV=build babel src --root-mode upward --out-dir dist --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments"
+  },
+  "dependencies": {
+    "react": "^16.11.0"
+  }
+}
