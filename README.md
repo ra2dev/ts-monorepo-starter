@@ -9,7 +9,7 @@ There is `0` typescript monorepo that has all in one place:
 - `Optional chaining` (just shipped in ts `3.7`)
 - `Stylelint` (with styled-components as an example)
 - `Prettier` configured to work correctly with eslint 
-- Latest `Storybook` with Typescript types display +(with freshest way to describe your user stories)
+- Latest `Storybook` with Typescript types display + [freshest way to describe your user stories](https://storybook.js.org/docs/basics/writing-stories/)
 - `Husky` + `Lint-staged`
 - `Babel 7`
 
@@ -35,4 +35,4 @@ Typescript monorepo starter is open source software [licensed as MIT](https://gi
 
 ## External links
 
-- [Hosted version](https://romroot.github.io/ts-monorepo-starter/)
+- [Hosted version] (https://romroot.github.io/ts-monorepo-starter/)
