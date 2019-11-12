@@ -1,7 +1,6 @@
 ## Typescript monorepo starter (React | Eslint| Optional Chaining)
 
 I would like to go back in the past and find this repository, but since I have already spent time I want to save your time on setting up a monorepo with a Typescript
-
 ## Why you should use
 
 There is `0` typescript monorepo that has all in one place:
@@ -33,3 +32,7 @@ _(for npm instead of `yarn` use - `npm -rm -rf ./yarn.lock && npm install`)_
 ## License
 
 Typescript monorepo starter is open source software [licensed as MIT](https://github.com/facebook/create-react-app/blob/master/LICENSE).
+
+## External links
+
+- [Hosted version](https://romroot.github.io/ts-monorepo-starter/)
