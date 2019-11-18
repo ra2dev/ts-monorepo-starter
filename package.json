@@ -1,10 +1,23 @@
 {
   "name": "ts-mono-starter",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Romroot/ts-mono-starter.git",
   "author": "Roman Romanovski",
   "license": "MIT",
+  "keywords": [
+    "typescript",
+    "starter",
+    "monorepo",
+    "lerna",
+    "babel",
+    "optional-chaining",
+    "jest"
+  ],
   "scripts": {
     "tsc": "tsc",
     "test": "jest",
