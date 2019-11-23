@@ -8,21 +8,24 @@ export interface ButtonProps {
    * This is custom description
    */
   children?: React.ReactNode
-  onClick?: any
-  text?: string
+  onClick?(event: any): void
+  text?: React.ReactNode
 }
 
 /**
  * Button component
- * @param children
- * @param props
- * @constructor
  */
-export function Button({ children, ...props }: ButtonProps) {
+function Button({ children, ...props }: ButtonProps) {
   const exampleOptionalChaining = b?.d?.g?.g?.()
   return (
-    <StyledButton type="button" disabled {...props}>
-      {children} {exampleOptionalChaining}jsx-props-no-spreading
+    <StyledButton type="button" {...props}>
+      {children} {exampleOptionalChaining}
     </StyledButton>
   )
 }
+
+Button.defaultProps = {
+  text: 'FUCK THIS BUTTON',
+}
+
+export default Button
