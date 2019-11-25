@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyledButton } from './Button.styles'
 
-const b: any = {}
+// const b: any = {}
 
 export interface ButtonProps {
   /**
@@ -16,10 +16,9 @@ export interface ButtonProps {
  * Button component
  */
 function Button({ children, ...props }: ButtonProps) {
-  const exampleOptionalChaining = b?.d?.g?.g?.()
   return (
     <StyledButton type="button" {...props}>
-      {children} {exampleOptionalChaining}
+      {children}
     </StyledButton>
   )
 }
