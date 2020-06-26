@@ -24,7 +24,7 @@ function Button({ children, ...props }: ButtonProps) {
 }
 
 Button.defaultProps = {
-  text: 'FUCK THIS BUTTON',
+  text: 'Default text',
 }
 
 export default Button

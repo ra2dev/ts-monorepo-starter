@@ -114,5 +114,6 @@ module.exports = {
 		],
 		'no-restricted-syntax': [0, 'ForOfStatement'],
 		curly: ['error', 'all'],
+		'import/extensions': 0,
 	},
 }

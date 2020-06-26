@@ -2,14 +2,14 @@ const path = require('path')
 const { lstatSync, readdirSync } = require('fs')
 
 const basePath = path.resolve(__dirname, '../', 'packages')
-const packages = readdirSync(basePath).filter(name => lstatSync(path.join(basePath, name)).isDirectory())
+const packages = readdirSync(basePath).filter((name) => lstatSync(path.join(basePath, name)).isDirectory())
 
 module.exports = async ({ config }) => {
 	config.module.rules.push({
 		test: /\.(ts|tsx)$/,
 		use: [
 			{
-				loader: require.resolve('awesome-typescript-loader'),
+				loader: require.resolve('babel-loader'),
 			},
 			{
 				loader: require.resolve('react-docgen-typescript-loader'),
