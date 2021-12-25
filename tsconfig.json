@@ -21,12 +21,6 @@
       "*": ["node_modules", "packages"]
     }
   },
-  "awesomeTypescriptLoaderOptions": {
-    "useBabel": true,
-    "ignoreDiagnostics": [7005],
-    "babelCore": "@babel/core",
-    "notes": "ignoreDiagnostics: [7005] details, see https://github.com/storybookjs/storybook/issues/7829"
-  },
   "include": ["packages"],
   "exclude": ["node_modules", "dist"]
 }
