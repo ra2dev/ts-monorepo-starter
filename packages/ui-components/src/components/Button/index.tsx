@@ -1,8 +1,6 @@
 import React from 'react'
 import { StyledButton } from './Button.styles'
 
-// const b: any = {}
-
 export interface ButtonProps {
   /**
    * This is custom description
@@ -15,7 +13,7 @@ export interface ButtonProps {
 /**
  * Button component
  */
-function Button({ children, ...props }: ButtonProps) {
+export const Button: React.FC<ButtonProps> =  ({ children, ...props }) => {
   return (
     <StyledButton type="button" {...props}>
       {children}
