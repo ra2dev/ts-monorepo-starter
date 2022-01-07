@@ -8,6 +8,8 @@
     "styled-components": "4.0.0>="
   },
   "scripts": {
-    "build": "npx swc src --out-dir build/src --sync && tsc --pretty --skipLibCheck --noEmit"
+    "build:types": "npx swc src --out-dir target --sync && tsc --pretty --skipLibCheck --noEmit",
+    "build:js": "",
+    "build": "yarn build:types && yarn build:js"
   }
 }
