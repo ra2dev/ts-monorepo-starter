@@ -11,7 +11,7 @@ There is `0` typescript monorepo that has all in one place:
 - `Prettier` configured to work correctly with eslint 
 - Latest `Storybook` with Typescript types display + [freshest way to describe your user stories](https://storybook.js.org/docs/basics/writing-stories/)
 - `Husky` + `Lint-staged`
-- `Babel 7` / `swc`
+- `swc`
 
 
 ## Quick Start
