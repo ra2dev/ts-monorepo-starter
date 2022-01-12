@@ -3,7 +3,7 @@
 I would like to go back in the past and find this repository, but since I have already spent time I want to save your time on setting up a monorepo with a Typescript
 ## Why you should use
 
-There is `0` typescript monorepo that has all in one place:
+There is `1` typescript monorepo that has all in one place:
 - Latest version of `Typescript` with `Lerna`
 - Correctly configured `Eslint` instead deprecated Tslint
 - `Optional chaining` (just shipped in ts `3.7`)
