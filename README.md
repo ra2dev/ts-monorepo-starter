@@ -35,4 +35,4 @@ Typescript monorepo starter is open source software [licensed as MIT](https://gi
 
 ## External links
 
-- [Hosted version] (https://romroot.github.io/ts-monorepo-starter/)
+- [Hosted version] (https://ra2dev.github.io/ts-monorepo-starter/)
