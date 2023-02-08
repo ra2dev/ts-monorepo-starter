@@ -21,6 +21,6 @@
       "*": ["node_modules", "packages"]
     }
   },
-  "include": ["packages"],
+  "include": [],
   "exclude": ["node_modules", "dist"]
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './'
+import Button from './index'
 
 export default {
   /* 👇 The title prop is optional.

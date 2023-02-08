@@ -8,8 +8,6 @@
     "styled-components": "4.0.0>="
   },
   "scripts": {
-    "build:types": "npx swc src --out-dir target --sync",
-    "build:js": "tsc --pretty --skipLibCheck --noEmit",
-    "build": "yarn build:types && yarn build:js"
+    "build": "tsup src/index.ts --format cjs,esm --dts --external react,styled-components --minify terser"
   }
 }
