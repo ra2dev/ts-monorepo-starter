@@ -17,8 +17,9 @@
     "declaration": true,
     "skipLibCheck": true,
     "paths": {
+      "@monoprefix/ui-components": ["libs/ui-components/src"],
       "@monoprefix/*": ["packages/*/src"],
-      "*": ["node_modules", "packages"]
+      "*": ["node_modules", "libs"]
     }
   },
   "include": [],

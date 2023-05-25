@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier/react", "plugin:storybook/recommended"],
+  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:storybook/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'react', 'prettier', 'import'],
   env: {

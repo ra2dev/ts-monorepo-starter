@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:js": "tsc --pretty --skipLibCheck --noEmit",
-    "build:types": "npx swc src --out-dir target --sync",
-    "build": "yarn build:types && yarn build:js"
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify terser"
   },
   "license": "MIT"
 }
