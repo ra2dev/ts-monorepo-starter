@@ -6,7 +6,7 @@
   "private": true,
   "version": "1.0.0",
   "repository": "https://github.com/Romroot/ts-mono-starter.git",
-  "author": "Raman Ramanouski",
+  "author": "Raman Ramanouski <raramanouski@gmail.com>",
   "license": "MIT",
   "keywords": [
     "typescript",
@@ -17,15 +17,8 @@
     "jest"
   ],
   "scripts": {
-    "tsc": "tsc",
-    "test": "jest",
-    "update:snapshots": "jest -u",
-    "lint": "eslint --ext .tsx,.ts packages/",
-    "style:lint": "stylelint 'packages/**/*.(ts|tsx)'",
-    "test:coverage": "jest --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "build": "lerna run build"
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.17",
