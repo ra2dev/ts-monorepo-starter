@@ -51,7 +51,7 @@ const useTableMetaInfo = (itemsCount: number, containerRef, stickyListRef) => {
     setItemsPerScreen(calculateItemsPerScreen(itemsCount))
   }, [itemsCount])
   const [itemsPositions, setItemsPositions] = useState(
-    calculateElementsPosition(itemsPerScreen, containerRef, stickyListRef)
+    calculateElementsPosition(itemsPerScreen, containerRef, stickyListRef, itemsCount)
   )
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const useTableMetaInfo = (itemsCount: number, containerRef, stickyListRef) => {
 
       if (nextItemsCount && nextItemsCount !== itemsCount) {
         setItemsPerScreen(nextItemsCount)
-        setItemsPositions(calculateElementsPosition(nextItemsCount, containerRef, stickyListRef))
+        setItemsPositions(calculateElementsPosition(nextItemsCount, containerRef, stickyListRef, itemsCount))
       }
     }
     window.addEventListener('resize', onResize)
@@ -72,8 +72,8 @@ const useTableMetaInfo = (itemsCount: number, containerRef, stickyListRef) => {
   return { itemsPerScreen, itemsPositions }
 }
 
-function calculateElementsPosition(itemsPerScreen, containerRef, stickyListRef) {
-  const items = times(itemsPerScreen)
+function calculateElementsPosition(itemsPerScreen, containerRef, stickyListRef, itemsCount) {
+  let items = times(itemsPerScreen)
 
   if (!containerRef?.current || !stickyListRef?.current) {
     return items.map((_, i) => ({ top: i * ROW_SIZE, index: i }))
@@ -86,25 +86,30 @@ function calculateElementsPosition(itemsPerScreen, containerRef, stickyListRef) 
     containerRef.current.offsetTop + containerRef.current.offsetHeight - stickyListRef.current.offsetHeight
 
   const isStickyBottom = window.scrollY >= stickyBottomY
+
   if (isStickyBottom) {
     // calculate last scrollY since block is not sticky more and it will move without any top updates required
     scrollY = (stickyBottomY - containerRef.current.offsetTop) % (itemsPerScreen * ROW_SIZE)
   }
-
   let totalIndex = Math.floor(scrollTop / ROW_SIZE)
-  let index = totalIndex % items.length
+  let index = Math.floor(scrollY / ROW_SIZE) % items.length
+
+  const shiftEmptyRows = ROW_SIZE * Math.max(0, itemsPerScreen - itemsCount + totalIndex)
 
   return items.map((_, i) => {
     if (i < index) {
-      return { top: (items.length + i) * ROW_SIZE - scrollY, index: totalIndex + items.length - index + i }
+      return {
+        top: (items.length + i) * ROW_SIZE - scrollY + shiftEmptyRows,
+        index: totalIndex + items.length - index + i,
+      }
     } else {
-      return { top: i * ROW_SIZE - scrollY, index: totalIndex - index + i }
+      return { top: i * ROW_SIZE - scrollY + shiftEmptyRows, index: totalIndex - index + i }
     }
   })
 }
 
 function Table() {
-  const [itemsCount, setCount] = useState(1000)
+  const [itemsCount] = useState(1861)
   const stickyListRef = useRef<any>(null)
   const containerRef = useRef<any>(null)
   const { itemsPerScreen, itemsPositions } = useTableMetaInfo(itemsCount, containerRef, stickyListRef)
@@ -112,7 +117,7 @@ function Table() {
 
   useEffect(() => {
     const onScroll = () => {
-      const itemsPositions = calculateElementsPosition(itemsPerScreen, containerRef, stickyListRef)
+      const itemsPositions = calculateElementsPosition(itemsPerScreen, containerRef, stickyListRef, itemsCount)
       const itemsDom = Array.from(listRef.current?.children)
 
       requestAnimationFrame(() => {
