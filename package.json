@@ -1,75 +1,19 @@
 {
-  "name": "ts-mono-starter",
-  "workspaces": [
-    "packages/*"
-  ],
+  "name": "ts-monorepo-starter",
   "private": true,
-  "version": "1.0.0",
-  "repository": "https://github.com/Romroot/ts-mono-starter.git",
-  "author": "Raman Ramanouski <raramanouski@gmail.com>",
-  "license": "MIT",
-  "keywords": [
-    "typescript",
-    "starter",
-    "monorepo",
-    "turborepo",
-    "storybook",
-    "jest"
-  ],
   "scripts": {
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.17",
-    "@storybook/addon-interactions": "^7.0.17",
-    "@storybook/addon-links": "^7.0.17",
-    "@storybook/blocks": "^7.0.17",
-    "@storybook/react": "^7.0.17",
-    "@storybook/react-vite": "^7.0.17",
-    "@storybook/testing-library": "^0.0.14-next.2",
-    "@swc/cli": "^0.1.55",
-    "@swc/core": "^1.2.126",
-    "@types/jest": "^27.0.3",
-    "@types/react": "~18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "@types/react-test-renderer": "^17.0.1",
-    "@types/styled-components": "^5.1.19",
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
-    "@vitejs/plugin-react-swc": "^3.0.0",
-    "eslint": "^8.5.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-storybook": "^0.6.12",
-    "husky": "^7.0.4",
-    "jest": "^27.4.5",
-    "lint-staged": "^12.1.4",
-    "prettier": "^2.5.1",
-    "pretty-quick": "^3.1.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-test-renderer": "^17.0.2",
-    "storybook": "^7.0.17",
-    "styled-components": "^5.3.3",
-    "ts-jest": "^27.1.2",
-    "tsup": "^6.6.0",
-    "turbo": "1.9.9",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.2",
-    "webpack": "^5.65.0"
+  "dependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.2.1",
+    "typescript": "^5.4.5"
   },
-  "resolutions": {
-    "immer": "9.0.6"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
   }
 }

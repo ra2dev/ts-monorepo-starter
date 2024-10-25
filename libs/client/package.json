@@ -1,9 +1,0 @@
-{
-  "name": "@monoprefix/client",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --minify terser"
-  },
-  "license": "MIT"
-}

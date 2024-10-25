@@ -1,9 +1,16 @@
 {
-  "name": "@monoprefix/ui-components",
+  "name": "@repo/ui",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --external react,styled-components --minify terser"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
   }
 }

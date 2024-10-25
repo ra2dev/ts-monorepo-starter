@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-import { StyledButton } from './Button.styles'
 
 export interface ButtonProps {
   /**
@@ -15,9 +14,9 @@ export interface ButtonProps {
  */
 export const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   return (
-    <StyledButton type="button" {...props}>
+    <button type="button" {...props}>
       {children}
-    </StyledButton>
+    </button>
   )
 }
 

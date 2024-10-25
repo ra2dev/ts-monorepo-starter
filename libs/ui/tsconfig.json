@@ -1,0 +1,8 @@
+{
+  "extends": "@repo/typescript-configs/react-library.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "types": [],
+    "jsx": "react"
+  }
+}
