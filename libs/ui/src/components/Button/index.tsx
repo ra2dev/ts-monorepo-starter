@@ -1,12 +1,12 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react";
 
 export interface ButtonProps {
   /**
    * This is custom description
    */
-  children?: ReactNode
-  onClick?(event: any): void
-  text?: ReactNode
+  children?: ReactNode;
+  onClick?(event: any): void;
+  text?: ReactNode;
 }
 
 /**
@@ -17,11 +17,11 @@ export const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
     <button type="button" {...props}>
       {children}
     </button>
-  )
-}
+  );
+};
 
 Button.defaultProps = {
-  text: 'Default text',
-}
+  text: "Default text",
+};
 
-export default Button
+export default Button;
