@@ -31,5 +31,5 @@
 - [ ] Code coverage
 - [ ] Storybook tests
 - [ ] Packagejson lint
-- [ ] Codeowners
 - [ ] Review rules
+- [ ] Codeowners
