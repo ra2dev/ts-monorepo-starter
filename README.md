@@ -32,4 +32,5 @@
 - [ ] Storybook tests
 - [ ] Packagejson lint
 - [ ] Review rules
+- [ ] Precommit hook
 - [ ] Codeowners
