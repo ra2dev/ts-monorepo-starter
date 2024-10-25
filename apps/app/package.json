@@ -5,18 +5,19 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
+    "lint": "eslint . --max-warnings 0",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
     "vite": "^4.3.2"
   }
 }

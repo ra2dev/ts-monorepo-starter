@@ -1,27 +1,17 @@
-import { ReactNode } from "react";
-
+import { ReactNode, FC } from "react";
+import styles from "./button.module.css";
 export interface ButtonProps {
-  /**
-   * This is custom description
-   */
   children?: ReactNode;
-  onClick?(event: any): void;
+  onClick?(): void;
   text?: ReactNode;
 }
 
-/**
- * Button component
- */
-export const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
+export const Button: FC<ButtonProps> = ({ children, ...props }) => {
   return (
-    <button type="button" {...props}>
+    <button type="button" {...props} className={styles.button}>
       {children}
     </button>
   );
-};
-
-Button.defaultProps = {
-  text: "Default text",
 };
 
 export default Button;
