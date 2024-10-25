@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@repo/ui-components": path.resolve(__dirname, "../../libs/ui/src"),
+      "@repo/ui": path.resolve(__dirname, "../../libs/ui/src"),
     },
   },
 });

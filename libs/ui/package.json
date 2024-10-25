@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --external react,styled-components --minify terser"
-  },
   "exports": {
     ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
