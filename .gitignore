@@ -6,5 +6,6 @@ dist
 .idea
 coverage
 .npmrc
+storybook-static
 target
 .turbo
