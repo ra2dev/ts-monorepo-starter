@@ -18,11 +18,12 @@
 - [x] Lint
 - [x] second app
 - [x] Test
-- [ ] Library
-- [ ] e2e-tests
-- [ ] Test storybook
-- [ ] Storybook
+- [x] Library
+- [x] e2e-tests
 - [ ] CI/CD
+- [ ] Test storybook
+- [ ] Lighthouse
+- [ ] Storybook
 - [ ] Documentation
 - [ ] bundle analyzer
 - [ ] Renovate

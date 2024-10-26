@@ -1,0 +1,5 @@
+{
+  "name": "@repo/playwright-config",
+  "private": true,
+  "main": "playwright.config.js"
+}

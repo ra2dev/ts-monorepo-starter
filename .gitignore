@@ -10,3 +10,5 @@ storybook-static
 apps/docs/public
 target
 .turbo
+e2e-report
+e2e-results

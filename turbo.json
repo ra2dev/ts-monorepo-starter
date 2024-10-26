@@ -13,6 +13,9 @@
     "test": {
       "dependsOn": ["^test"]
     },
+    "e2e:test": {
+      "dependsOn": ["^build"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
