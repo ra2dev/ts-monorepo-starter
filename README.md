@@ -20,10 +20,17 @@
 - [x] Test
 - [x] Library
 - [x] e2e-tests
+- [x] Storybook
 - [ ] CI/CD
-- [ ] Test storybook
+- [ ] Turborepo ENV
+- [ ] Light documentation in readme
 - [ ] Lighthouse
-- [ ] Storybook
+
+
+
+
+----
+- [ ] Lighthouse
 - [ ] Documentation
 - [ ] bundle analyzer
 - [ ] Renovate
@@ -36,6 +43,6 @@
 - [ ] Review rules
 - [ ] Precommit hook
 - [ ] Codeowners
-- [ ] Env
 - [ ] Security - snyk
 - [ ] Sonarqube
+- [ ] Test storybook
