@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "build": "tsup src/index.ts --minify terser",
+    "build": "tsup src/index.ts",
     "test": "vitest"
   },
   "dependencies": {
