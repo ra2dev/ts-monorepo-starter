@@ -16,10 +16,11 @@
 ### List
 
 - [x] Lint
-- [ ] second app
-- [ ] Test
+- [x] second app
+- [x] Test
 - [ ] Library
 - [ ] e2e-tests
+- [ ] Test storybook
 - [ ] Storybook
 - [ ] CI/CD
 - [ ] Documentation
@@ -34,3 +35,6 @@
 - [ ] Review rules
 - [ ] Precommit hook
 - [ ] Codeowners
+- [ ] Env
+- [ ] Security - snyk
+- [ ] Sonarqube

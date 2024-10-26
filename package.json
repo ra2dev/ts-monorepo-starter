@@ -7,6 +7,7 @@
     "build:docs": "turbo build --filter=@repo/docs",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "test": "turbo test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "dependencies": {

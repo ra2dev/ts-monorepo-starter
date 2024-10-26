@@ -1,11 +1,5 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
-  "include": [
-    "next-env.d.ts",
-    "next.config.mjs",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
+  "include": ["vite.config.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
